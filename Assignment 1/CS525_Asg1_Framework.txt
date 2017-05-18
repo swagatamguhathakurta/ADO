@@ -1,0 +1,72 @@
+if init!=1
+global init=1
+"Storage manager initialized"
+
+createpagefile
+check init
+if file exists
+(http://stackoverflow.com/questions/230062/whats-the-best-way-to-check-if-a-file-exists-in-c-cross-platform)
+throw error (file already present)
+else
+open file in w
+fseek (4096); / ftruncate;
+(http://stackoverflow.com/questions/7775027/how-to-create-file-of-x-size)
+else
+not initialed
+
+openpagefile
+check if storage manager is initialized
+if file does not exists
+(http://stackoverflow.com/questions/230062/whats-the-best-way-to-check-if-a-file-exists-in-c-cross-platform)
+throw error (file already present)
+else
+fopen(read) //file handle
+totalnumpages=(filesize)/pagesize
+(http://stackoverflow.com/questions/238603/how-can-i-get-a-files-size-in-c)
+curpagepos=0
+filename= filename
+*mnginfo = filehandler
+
+closepagefile
+initialized?
+fclose
+struct variable null and 0 
+
+destroyfile
+delete a file
+http://www.codingunit.com/c-tutorial-deleting-and-renaming-a-file
+
+readblock
+initialized?
+check page 
+page ! > totalnumpages
+if(greater)
+error
+else
+lseek to navigate to the page (pagenumber * pagesize
+http://codewiki.wikidot.com/c:system-calls:lseek
+read to read in the buffer (pagehandler)
+http://codewiki.wikidot.com/c:system-calls:read
+currentpagepos = pagenum;
+
+getblockpos
+return currentpagepos
+
+readFirstBlock
+readblock(0)
+
+readLastBlock
+readblock(totalnumpage-1)
+
+readPreviousBlock
+readblock(currentblockpos-1) 
+
+readCurrentBlock
+readblock(currentblockpos)
+
+readNextBlock
+readblock(currentblockpos+1)
+
+
+
+
